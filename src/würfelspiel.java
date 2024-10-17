@@ -5,7 +5,6 @@ public class würfelspiel {
     public static void main(String[] args) {
 
         Random random = new Random();
-        int randomNumber = random.nextInt(6);
         Scanner scanner = new Scanner(System.in);
         boolean isFinished = false;
 
@@ -14,7 +13,9 @@ public class würfelspiel {
             System.out.println("Herzlich Willkommen im Würfelspiel!");
             System.out.println("1: Würfelspiel Starten.");
             System.out.println("2: Würfelspiel Beenden.");
+
             int selection = scanner.nextInt();
+            scanner.nextLine();
 
             if (selection == 1) {
                 int spielerPunkte = 0;
@@ -48,8 +49,9 @@ public class würfelspiel {
                     }
                 }
 
-            if (selection == 2) {
+            else if (selection == 2) {
                 isFinished = true;
+                System.out.println("Das Spiel wurde beendet.");
             }
         }
     }
