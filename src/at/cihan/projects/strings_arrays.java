@@ -1,3 +1,5 @@
+package at.cihan.projects;
+
 public class strings_arrays {
     public static void main(String[] args) {
         int[] throwsArray = new int[6];

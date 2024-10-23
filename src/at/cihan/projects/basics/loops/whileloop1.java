@@ -1,3 +1,5 @@
+package at.cihan.projects.basics.loops;
+
 import java.util.Random;
 
 public class whileloop1 {

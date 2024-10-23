@@ -1,3 +1,5 @@
+package at.cihan.projects;
+
 import java.util.Scanner;
 
 public class bankomat_beispiel {

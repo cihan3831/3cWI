@@ -1,3 +1,5 @@
+package at.cihan.projects.basics.loops;
+
 public class loops1 {
     public static void main(String[] args) {
         int sum = 0;
