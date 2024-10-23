@@ -1,4 +1,4 @@
-public class strings_cäsarverschlüsselung {
+public class strings_caesarverschluesselung {
     public static void main(String[] args) {
         String result = encrypt("abc");
         System.out.println(result);
