@@ -1,4 +1,4 @@
-package at.cihan.projects;
+package at.cihan.projects.if_bedingungen;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package at.cihan.projects;
+package at.cihan.projects.strings;
 
 public class strings_caesarverschluesselung {
     public static void main(String[] args) {

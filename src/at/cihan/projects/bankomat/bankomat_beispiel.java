@@ -1,4 +1,4 @@
-package at.cihan.projects;
+package at.cihan.projects.bankomat;
 
 import java.util.Scanner;
 

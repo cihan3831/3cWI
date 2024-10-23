@@ -1,9 +1,9 @@
-package at.cihan.projects;
+package at.cihan.projects.dice_game;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class würfelspiel {
+public class diceGame {
     public static void main(String[] args) {
 
         Random random = new Random();

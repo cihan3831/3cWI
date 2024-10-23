@@ -1,4 +1,4 @@
-package at.cihan.projects;
+package at.cihan.projects.switch_statement;
 
 import java.util.Random;
 
