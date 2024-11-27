@@ -10,10 +10,35 @@ public class Car {
         public String serialnumber;
         private String color;
 
-        //Methode
+        //Methode: Fahren
         public void drive(){
                 this.fuelAmount = this.fuelAmount-fuelConsumption;
                 System.out.println("I am driving");
         }
-    }
 
+        //Methode: Bremsen
+        public void doBreak() {
+                System.out.println("Ich bremse");
+        }
+
+        //Methode: Turbo Boost
+        public void turboBoost() {
+                if (fuelAmount > 10) {
+                        System.out.println("SuperBoostMode");
+                } else {
+                        System.out.println("Not enough fuel to go to Superboost");
+                }
+        }
+
+        //Methode: Hupen
+        public void honk(int amountOfRepetitions) {
+                for (int i = 0; i < amountOfRepetitions; i++) {
+                        System.out.println("Tuuut");
+                }
+        }
+
+        //Methode: Rest-Reichweite
+        public int getRemainingRange() {
+                return fuelAmount * 100 / fuelConsumption;
+        }
+    }

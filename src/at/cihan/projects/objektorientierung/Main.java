@@ -19,5 +19,11 @@ public class Main {
         System.out.println(c2.fuelAmount);
         c2.drive();
         System.out.println(c2.fuelAmount);
+
+        // Neue Methoden testen
+        c2.doBreak();
+        c2.turboBoost();
+        c2.honk(3);
+        System.out.println("Remaining range: " + c2.getRemainingRange() + " km");
     }
 }
