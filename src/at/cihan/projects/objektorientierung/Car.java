@@ -12,7 +12,7 @@ public class Car {
 
         //Methode
         public void drive(){
-                this.fuelAmount=this.fuelAmount-fuelConsumption;
+                this.fuelAmount = this.fuelAmount-fuelConsumption;
                 System.out.println("I am driving");
         }
     }
