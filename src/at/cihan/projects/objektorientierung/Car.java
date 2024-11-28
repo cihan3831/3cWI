@@ -10,6 +10,12 @@ public class Car {
         public String serialnumber;
         private String color;
 
+        public Car(int fc, String b, String s ){
+                this.fuelConsumption = fc;
+                this.brand = b;
+                this.serialnumber = s;
+        }
+
         //Methode: Fahren
         public void drive(){
                 this.fuelAmount = this.fuelAmount-fuelConsumption;
