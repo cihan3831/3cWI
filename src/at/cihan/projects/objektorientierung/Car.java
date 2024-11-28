@@ -4,12 +4,12 @@ public class Car {
         // Instanz / Gedächtnisvariablen
 
         // don't do that later
-        public int fuelConsumption;
-        public int fuelAmount;
-        public String brand;
-        public String serialnumber;
-        public String color;
-        private int amountFuelIntMotor;
+        private int fuelConsumption;
+        private int Tank;
+        private int fuelAmount;
+        private String brand;
+        private String serialnumber;
+        private String color;
 
         /*
 
@@ -52,4 +52,40 @@ public class Car {
         public int getRemainingRange() {
                 return fuelAmount * 100 / fuelConsumption;
         }
-    }
+
+        public void setTank(int tank){
+                Tank = tank;
+        }
+
+        public void setBrand(String brand) {
+                this.brand = brand;
+        }
+
+        public void setColor(String color) {
+                this.color = color;
+        }
+
+        public void setFuelAmount(int fuelAmount) {
+                this.fuelAmount = fuelAmount;
+        }
+
+        public void setFuelConsumption(int fuelConsumption) {
+                this.fuelConsumption = fuelConsumption;
+        }
+
+        public void setSerialnumber(String serialnumber) {
+                this.serialnumber = serialnumber;
+        }
+
+        public String getBrand() {
+                return brand;
+        }
+
+        public String getColor() {
+                return color;
+        }
+
+        public int getFuelAmount() {
+                return fuelAmount;
+        }
+}
