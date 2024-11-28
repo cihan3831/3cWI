@@ -8,13 +8,18 @@ public class Car {
         public int fuelAmount;
         public String brand;
         public String serialnumber;
-        private String color;
+        public String color;
+        private int amountFuelIntMotor;
+
+        /*
 
         public Car(int fc, String b, String s ){
                 this.fuelConsumption = fc;
                 this.brand = b;
                 this.serialnumber = s;
         }
+
+         */
 
         //Methode: Fahren
         public void drive(){
