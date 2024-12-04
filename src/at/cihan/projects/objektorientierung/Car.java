@@ -5,21 +5,21 @@ public class Car {
 
         // don't do that later
         private int fuelConsumption;
-        private int Tank;
+        private int tank;
         private int fuelAmount;
         private String brand;
-        private String serialnumber;
+        private String serialNumber;
         private String color;
 
-        /*
 
-        public Car(int fc, String b, String s ){
-                this.fuelConsumption = fc;
-                this.brand = b;
-                this.serialnumber = s;
+        public Car(int fuelConsumption, int tank, String brand, String serialNumber, String color) {
+                this.fuelConsumption = fuelConsumption;
+                this.tank = tank;
+                this.brand = brand;
+                this.serialNumber = serialNumber;
+                this.fuelAmount = 0;
+                this.color = color;
         }
-
-         */
 
         //Methode: Fahren
         public void drive(){
@@ -53,8 +53,12 @@ public class Car {
                 return fuelAmount * 100 / fuelConsumption;
         }
 
-        public void setTank(int tank){
-                Tank = tank;
+        public int getTank() {
+                return tank;
+        }
+
+        public void setTank(int tank) {
+                this.tank = tank;
         }
 
         public void setBrand(String brand) {
@@ -74,7 +78,7 @@ public class Car {
         }
 
         public void setSerialnumber(String serialnumber) {
-                this.serialnumber = serialnumber;
+                this.serialNumber = serialnumber;
         }
 
         public String getBrand() {
@@ -88,4 +92,9 @@ public class Car {
         public int getFuelAmount() {
                 return fuelAmount;
         }
+
+        public int getFuelConsumption() {
+                return fuelConsumption;
+        }
+
 }

@@ -3,7 +3,15 @@ package at.cihan.projects.objektorientierung;
 public class Main {
     public static void main(String[] args) {
 
+        Car c1 = new Car(7,70, "Audi","A1234", "green");
+        Car c2 = new Car(6,60, "Mercedes","C1234", "black");
+        Car c3 = new Car(9,100, "BMW","B1234", "blue");
 
+        System.out.println("Car 1: " + c1.getBrand() + ", Farbe: " + c1.getColor());
+        System.out.println("Car 2: " + c2.getBrand() + ", Farbe: " + c2.getColor());
+        System.out.println("Car 3: " + c3.getBrand() + ", Farbe: " + c3.getColor());
+
+        /*
         Car c1 = new Car();
         c1.setBrand("Audi");
         c1.setFuelConsumption(7);
@@ -12,12 +20,16 @@ public class Main {
         c1.setColor("green");
         c1.setTank(70);
 
+         */
+
         /*
         Car c2 = new Car();
         c2.brand = "Mercedes";
         c2.fuelConsumption = 6;
         c2.serialnumber = "C1234";
         c2.fuelAmount = 50;
+        c2.setTank(60);
+        c2.setColor("black");
 
          */
 
