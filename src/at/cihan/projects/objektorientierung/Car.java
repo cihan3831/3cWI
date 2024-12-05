@@ -12,7 +12,7 @@ public class Car {
         private String color;
 
 
-        public Car(int fuelConsumption, int tank, String brand, String serialNumber, String color) {
+        public Car(int fuelConsumption, int fuelAmount, int tank, String brand, String serialNumber, String color) {
                 this.fuelConsumption = fuelConsumption;
                 this.tank = tank;
                 this.brand = brand;

@@ -3,9 +3,9 @@ package at.cihan.projects.objektorientierung;
 public class Main {
     public static void main(String[] args) {
 
-        Car c1 = new Car(7,70, "Audi","A1234", "green");
-        Car c2 = new Car(6,60, "Mercedes","C1234", "black");
-        Car c3 = new Car(9,100, "BMW","B1234", "blue");
+        Car c1 = new Car(7,20, 70,"Audi", "A1234", "green");
+        Car c2 = new Car(6,40, 60,"Mercedes", "C1234","black");
+        Car c3 = new Car(9,35, 100,"BMW", "B1234","blue");
 
         System.out.println("Car 1: " + c1.getBrand() + ", Farbe: " + c1.getColor());
         System.out.println("Car 2: " + c2.getBrand() + ", Farbe: " + c2.getColor());
@@ -15,7 +15,7 @@ public class Main {
         Car c1 = new Car();
         c1.setBrand("Audi");
         c1.setFuelConsumption(7);
-        c1.setSerialnumber("A1234");
+        c1.setSerialNumber("A1234");
         c1.setFuelAmount(70);
         c1.setColor("green");
         c1.setTank(70);
