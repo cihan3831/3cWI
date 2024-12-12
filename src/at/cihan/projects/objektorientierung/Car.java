@@ -2,25 +2,45 @@ package at.cihan.projects.objektorientierung;
 
 public class Car {
         // Instanz / Gedächtnisvariablen
-
         // don't do that later
-        private int fuelConsumption;
-        private int tank;
-        private int fuelAmount;
+        private Engine engine;
         private String brand;
-        private String serialNumber;
+        private int honkCounter;
         private String color;
+        private static int myVariable = 7;
 
 
-        public Car(int fuelConsumption, int fuelAmount, int tank, String brand, String serialNumber, String color) {
-                this.fuelConsumption = fuelConsumption;
-                this.tank = tank;
+        public Car(Engine engine, String brand, String color) {
+                this.engine = engine;
+                this.honkCounter = 0;
                 this.brand = brand;
-                this.serialNumber = serialNumber;
-                this.fuelAmount = 0;
                 this.color = color;
         }
 
+        public void honk(){
+                System.out.println("Ich bin ein " + this.brand + " und habe die farbe " + this.color + " und habe " + this.getEngine().getHorsePower() + " ps.");
+                this.honkCounter++;
+        }
+
+        public String getBrand() { return brand; }
+
+        public void setBrand(String brand) {this.brand=brand;}
+
+        public String getColor() {return color;}
+
+        public void setColor(String color) {this.color = color;}
+
+        public int getHonkCounter() {return honkCounter;}
+
+        public Engine getEngine() {
+                return engine;
+        }
+
+        public void setEngine(Engine engine) {
+                this.engine = engine;
+        }
+
+        /*
         //Methode: Fahren
         public void drive(){
                 this.fuelAmount = this.fuelAmount-fuelConsumption;
@@ -96,5 +116,5 @@ public class Car {
         public int getFuelConsumption() {
                 return fuelConsumption;
         }
-
+        */
 }
