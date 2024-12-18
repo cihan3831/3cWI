@@ -1,9 +1,13 @@
 package at.cihan.projects.objektorientierung;
 
+import java.util.List;
+import java.util.ArrayList;
+
 public class Car {
         // Instanz / Gedächtnisvariablen
         // don't do that later
         private Engine engine;
+        private List<RearMirror> mirrors;
         private String brand;
         private int honkCounter;
         private String color;
@@ -15,9 +19,20 @@ public class Car {
                 this.honkCounter = 0;
                 this.brand = brand;
                 this.color = color;
+                this.mirrors = new ArrayList<>();
+        }
+
+        public void addMirror(RearMirror rearMirror) {
+                this.mirrors.add(rearMirror);
+        }
+
+        public List<RearMirror> getMirrors() {
+                return mirrors;
         }
 
         public void honk(){
+
+
                 System.out.println("Ich bin ein " + this.brand + " und habe die farbe " + this.color + " und habe " + this.getEngine().getHorsePower() + " ps.");
                 this.honkCounter++;
         }
@@ -117,4 +132,6 @@ public class Car {
                 return fuelConsumption;
         }
         */
+
+
 }
