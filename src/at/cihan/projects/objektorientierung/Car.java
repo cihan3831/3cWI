@@ -7,18 +7,22 @@ public class Car {
         // Instanz / Gedächtnisvariablen
         // don't do that later
         private Engine engine;
+        private int fuelUsage;
         private List<RearMirror> mirrors;
         private String brand;
         private int honkCounter;
         private String color;
+        private int speed;
         private static int myVariable = 7;
 
 
-        public Car(Engine engine, String brand, String color) {
+        public Car(Engine engine, int fuelUsage, String brand, String color, int speed) {
                 this.engine = engine;
+                this.fuelUsage = fuelUsage;
                 this.honkCounter = 0;
                 this.brand = brand;
                 this.color = color;
+                this.speed = speed;
                 this.mirrors = new ArrayList<>();
         }
 

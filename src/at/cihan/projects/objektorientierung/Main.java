@@ -3,19 +3,34 @@ package at.cihan.projects.objektorientierung;
 public class Main {
     public static void main(String[] args) {
 
+        Engine e1 = new Engine(140, Engine.TYPE.DIESEL, 48);
+        Car c1 = new Car(e1, 33, "Mercedes", "blue", 100);
+
+        c1.getEngine().drive(100);
+        System.out.println(c1.getEngine().getTank());
+
+        /*
         Engine e1 = new Engine(140, Engine.TYPE.DIESEL);
         RearMirror r1 = new RearMirror(100,0);
         RearMirror r2 = new RearMirror(90,-40);
 
+         */
 
+        /*
         Car c1 = new Car(e1, "Audi", "grün");
         c1.addMirror(r1);
         c1.addMirror(r2);
 
+         */
+
+
+/*
         System.out.println(c1.getMirrors().get(0).getPosition());
 
         System.out.println(c1.getEngine().getHorsePower());
         }
+
+ */
 
         /*
         Car c2 = new Car(6,40, 60,"Mercedes", "C1234","black");
@@ -72,4 +87,5 @@ public class Main {
         c2.honk(3);
         System.out.println("Remaining range: " + c2.getRemainingRange() + " km");
          */
+    }
 }
