@@ -9,6 +9,7 @@ public class Car {
         private Engine engine;
         private int fuelUsage;
         private List<RearMirror> mirrors;
+        private List<Tires> tires;
         private String brand;
         private int honkCounter;
         private String color;
@@ -24,6 +25,11 @@ public class Car {
                 this.color = color;
                 this.speed = speed;
                 this.mirrors = new ArrayList<>();
+                this.tires = new ArrayList<>();
+
+                for (int i = 0; i < 4; i++) {
+                        this.tires.add(new Tires(17, "Sommer", 8.0, 2.5));
+                }
         }
 
         public void addMirror(RearMirror rearMirror) {
@@ -34,22 +40,44 @@ public class Car {
                 return mirrors;
         }
 
-        public void honk(){
+        public List<Tires> getTires() {
+                return tires;
+        }
 
+        public void replaceTire(int index, Tires newTire) {
+                if (index < 0 || index >= tires.size()) {
+                        System.out.println("Ungültiger Reifen-Index!");
+                } else {
+                        tires.set(index, newTire);
+                        System.out.println("Reifen an Position " + index + " wurde ersetzt.");
+                }
+        }
+
+        public void honk() {
 
                 System.out.println("Ich bin ein " + this.brand + " und habe die farbe " + this.color + " und habe " + this.getEngine().getHorsePower() + " ps.");
                 this.honkCounter++;
         }
 
-        public String getBrand() { return brand; }
+        public String getBrand() {
+                return brand;
+        }
 
-        public void setBrand(String brand) {this.brand=brand;}
+        public void setBrand(String brand) {
+                this.brand = brand;
+        }
 
-        public String getColor() {return color;}
+        public String getColor() {
+                return color;
+        }
 
-        public void setColor(String color) {this.color = color;}
+        public void setColor(String color) {
+                this.color = color;
+        }
 
-        public int getHonkCounter() {return honkCounter;}
+        public int getHonkCounter() {
+                return honkCounter;
+        }
 
         public Engine getEngine() {
                 return engine;
@@ -58,6 +86,7 @@ public class Car {
         public void setEngine(Engine engine) {
                 this.engine = engine;
         }
+}
 
         /*
         //Methode: Fahren
@@ -135,7 +164,7 @@ public class Car {
         public int getFuelConsumption() {
                 return fuelConsumption;
         }
-        */
-
 
 }
+
+         */
