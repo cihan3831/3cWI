@@ -1,7 +1,15 @@
-package at.cihan.projects.objektorientierung;
+package at.cihan.projects.objektorientierung.Car;
 
 public class Main {
     public static void main(String[] args) {
+
+        Engine e1 = new Engine(140, Engine.TYPE.DIESEL);
+        RearMirror r1 = new RearMirror(100, 0);
+        RearMirror r2 = new RearMirror(90, -40);
+
+        Truck t1 = new Truck(e1, "Mercedes", "green", "trailer1");
+
+        System.out.println(t1.getColor() + t1.getTrailer());
 
 
         /* 11
@@ -44,6 +52,7 @@ public class Main {
 
         */
 
+        /*Battery
         Battery battery1 = new Battery(90);
         Battery battery2 = new Battery(65);
 
@@ -56,6 +65,8 @@ public class Main {
 
     }
 }
+
+         */
 
 
 /*
@@ -144,4 +155,5 @@ public class Main {
         System.out.println("Remaining range: " + c2.getRemainingRange() + " km");
          */
 
-
+    }
+}
