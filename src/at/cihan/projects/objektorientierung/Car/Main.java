@@ -10,6 +10,8 @@ public class Main {
         Truck t1 = new Truck(e1, "Mercedes", "green", "trailer1");
 
         System.out.println(t1.getColor() + t1.getTrailer());
+        t1.drive();
+        t1.stop();
 
 
         /* 11
