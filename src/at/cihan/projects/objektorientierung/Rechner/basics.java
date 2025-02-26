@@ -9,11 +9,11 @@ public class basics {
         return a - b;
     }
 
-    public double mul(double a, double b){
+    public int mul(int a, int b){
         return a * b;
     }
 
-    public double div(double a, double b){
+    public int div(int a, int b){
         return a / b;
     }
 }
