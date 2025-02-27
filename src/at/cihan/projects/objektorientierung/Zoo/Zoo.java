@@ -3,15 +3,25 @@ package at.cihan.projects.objektorientierung.Zoo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class zoo {
+public class Zoo {
     private String name;
     private String street;
-    private List<animal> animals;
+    private List<Animal> animals;
 
-    public zoo(String name, String street) {
+    public Zoo(String name, String street) {
         this.name = name;
         this.street = street;
         this.animals = new ArrayList<>();
+    }
+
+    public void addAnimal(Animal animal){
+        this.animals.add(animal);
+    }
+
+    public void printAnimals(){
+        for (Animal animal: this.animals){
+            System.out.println("Animal weight:" + animal.getWeight());
+        }
     }
 
     public void makeShow(){

@@ -1,10 +1,10 @@
 package at.cihan.projects.objektorientierung.Zoo;
 
-public class animal {
+public class Animal {
     private int height;
     private int weight;
 
-    public animal(int height, int weight){
+    public Animal(int height, int weight){
         this.weight = weight;
         this.height = height;
     }
