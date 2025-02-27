@@ -1,6 +1,6 @@
 package at.cihan.projects.objektorientierung.Rechner;
 
-public class basics {
+public class Basics {
     public double add(double a, double b){
         return a + b;
     }

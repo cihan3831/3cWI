@@ -1,6 +1,6 @@
 package at.cihan.projects.objektorientierung.Rechner;
 
-public class scientific {
+public class Scientific {
     public int sinus(int a) {
         return (int) Math.sin(a);
     }
