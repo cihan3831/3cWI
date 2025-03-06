@@ -14,13 +14,21 @@ public class Phone {
         this.card = card;
     }
 
-    public void takePicture(){
+    public void takePicture() {
         PhoneFile file = this.cam.takePicture();
-        System.out.println(file.getName());
+        this.card.save(file);
     }
 
-    public void doCall(String number){
+    public void doCall(String number) {
         this.sim.doCall(number);
     }
-    
+
+    public int getFreeSpace() {
+        return this.card.getFreeSpace();
+    }
+
+    public List getAllFiles() {
+        return this.card.getFiles();
+    }
+
 }

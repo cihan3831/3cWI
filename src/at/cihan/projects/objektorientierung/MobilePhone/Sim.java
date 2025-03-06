@@ -19,5 +19,6 @@ public class Sim {
 
     public void doCall(String number){
         System.out.println("calling " + number);
+
     }
 }

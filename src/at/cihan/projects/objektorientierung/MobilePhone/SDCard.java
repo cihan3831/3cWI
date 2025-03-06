@@ -12,7 +12,7 @@ public class SDCard {
         this.files = new ArrayList<>();
     }
 
-    public void saveFiles(PhoneFile file) {
+    public void save(PhoneFile file) {
         files.add(file);
     }
 
@@ -20,12 +20,16 @@ public class SDCard {
         return capacity;
     }
 
+    public List<PhoneFile> getFiles() {
+        return files;
+    }
 
-    public int getFreeSpace(){
-        int sum = 0;
+    public int getFreeSpace() {
+        int size = 0;
         for (PhoneFile phoneFile : files) {
-            sum += phoneFile.getSize();
+            size += phoneFile.getSize();
         }
-        return capacity - sum;
+
+        return capacity - size;
     }
 }
